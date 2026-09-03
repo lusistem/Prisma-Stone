@@ -1,4 +1,4 @@
-# Prisma-Stone
+# PRISMA STONE
 # Bienvenidos a Nuestro Sitio Web
 
 <!-- MENÚ DE NAVEGACIÓN SUPERIOR -->
@@ -14,9 +14,9 @@
 <!-- BANNER / CARRUSEL DE IMÁGENES A ANCHO COMPLETO -->
 <div style="width: 100%; margin-bottom: 25px;">
   <div style="display: flex; gap: 15px; overflow-x: auto; width: 100%; padding-bottom: 15px; scroll-snap-type: x mandatory;">
-    <img src="imagen1.jpg" alt="Trabajo realizado 1" style="width: 100%; min-width: 100%; height: 450px; object-fit: cover; border-radius: 8px; flex-shrink: 0; scroll-snap-align: start;">
-    <img src="imagen2.jpg" alt="Trabajo realizado 2" style="width: 100%; min-width: 100%; height: 450px; object-fit: cover; border-radius: 8px; flex-shrink: 0; scroll-snap-align: start;">
-    <img src="imagen3.jpg" alt="Trabajo realizado 3" style="width: 100%; min-width: 100%; height: 450px; object-fit: cover; border-radius: 8px; flex-shrink: 0; scroll-snap-align: start;">
+<img width="1366" height="768" alt="Blanco Negro Collage Fotos Sitio web de enlace en perfil" src="https://github.com/user-attachments/assets/9b5cd5a2-51b7-4449-80fc-cd44bc1d357f" style="width: 100%; min-width: 100%; height: 450px; object-fit: cover; border-radius: 8px; flex-shrink: 0; scroll-snap-align: start;">
+<img width="1195" height="896" alt="Gemini_Generated_Image_sotahesotahesota" src="https://github.com/user-attachments/assets/ecce2bd2-7a9b-46fd-8763-56c045a372b9" style="width: 100%; min-width: 100%; height: 450px; object-fit: cover; border-radius: 8px; flex-shrink: 0; scroll-snap-align: start;">
+<img width="1264" height="842" alt="Gemini_Generated_Image_hyz125hyz125hyz1" src="https://github.com/user-attachments/assets/e190f238-7ca6-4508-bed9-85579312eb92" style="width: 100%; min-width: 100%; height: 450px; object-fit: cover; border-radius: 8px; flex-shrink: 0; scroll-snap-align: start;">
   </div>
 
   <!-- BOTÓN DIRECTO DE LLAMADA -->
@@ -38,16 +38,23 @@
 
 <a id="nosotros"></a>
 ## NOSOTROS
-Escribe aquí una breve descripción de tu empresa, tu experiencia y lo que te diferencia de la competencia.
+¿Qué hacemos?
+En PRISMA STONE nos especializamos en la venta e instalación profesional de acabados generales de alta calidad. Transformamos espacios comerciales y residenciales mediante el trabajo experto en mármol, granito, cuarzo, piedra sinterizada, terrazos y melamine.
 
+Misión
+Ofrecer soluciones integrales en recubrimientos y acabados de primera clase, garantizando máxima precisión en la instalación y materiales de alta durabilidad para superar las expectativas de diseño y funcionalidad de nuestros clientes.
+
+Visión
+Consolidarnos como una empresa líder y referente en el sector de acabados arquitectónicos, destacando por la excelencia técnica, la innovación en materiales y la satisfacción garantizada en cada proyecto.
 ---
 
 <a id="servicios"></a>
 ## SERVICIOS
-Enumera aquí los principales servicios que ofreces:
-- Servicio 1: Descripción corta.
-- Servicio 2: Descripción corta.
-- Servicio 3: Descripción corta.
+* Venta e instalación de piedra natural: Mármol y granito para tableros, pisos y revestimientos.
+* Superficies de ingeniería: Suministro y colocación de cuarzo y piedra sinterizada.
+* Venta e instalación de terrazos: Soluciones continuas y duraderas para pisos y superficies.
+* Mobiliario en melamine: Fabricación e instalación de muebles a medida para cocina, closet y oficina.
+* Servicios generales de acabado: Asesoría, corte, pulido e instalación técnica integral.
 
 ---
 
