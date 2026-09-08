@@ -60,7 +60,14 @@ Consolidarnos como una empresa líder y referente en el sector de acabados arqui
 
 <a id="trabajos"></a>
 ## TRABAJOS
-Muestra aquí tus proyectos o galerías de imágenes de los trabajos finalizados.
+Presentación de proyectos finalizados en cocinas, comedores, baños, escaleras, etc; Acabados de primera calidad en materiales como mármol, granito, cuarzo, piedra sinterizada, terrazos y melamine con más de 20 años de expericia; Calidad de primer nivel. 
+<img width="1920" height="1280" alt="luxury_warm_kitchen (1)" src="https://github.com/user-attachments/assets/75202ad1-4b54-44dd-a3bf-fdc9c5a906bf" />
+<img width="1920" height="1280" alt="luxury_mitre_corner" src="https://github.com/user-attachments/assets/b431b6ad-705a-4c65-bdba-72ff872753b2" />
+<img width="1920" height="1280" alt="luxurious_black_marble_bathroom" src="https://github.com/user-attachments/assets/b3eb31b7-bdf9-48c9-99c2-54b48c28ddee" />
+<img width="2016" height="1184" alt="luxury_quartz_dining_table" src="https://github.com/user-attachments/assets/c13c4c4b-7786-489c-8014-321ec35a69da" />
+<img width="1920" height="1280" alt="overhead_granite_meeting_table" src="https://github.com/user-attachments/assets/e5ecb0ca-aa20-4326-9c9b-f89ad738610e" />
+<img width="2096" height="1184" alt="black_galaxy_staircase_1" src="https://github.com/user-attachments/assets/65ee4ef6-ae5a-4a57-8315-5b3a6476fd0b" />
+
 
 ---
 
