@@ -21,14 +21,14 @@
 
   <!-- BOTÓN DIRECTO DE LLAMADA -->
   <div style="text-align: center; margin-top: 15px;">
-    <a href="tel:+51999999999" style="background-color: #007bff; color: white; padding: 14px 28px; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 16px; display: inline-block; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+    <a href="tel:+51970134165" style="background-color: #007bff; color: white; padding: 14px 28px; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 16px; display: inline-block; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
       📞 SOLICITAR COTIZACIÓN POR LLAMADA
     </a>
   </div>
 </div>
 
 <!-- BOTÓN FLOTANTE DE WHATSAPP (Aparece abajo a la derecha de la pantalla) -->
-<a href="https://wa.me/51999999999?text=Hola,%20deseo%20solicitar%20una%20cotización" target="_blank" style="position: fixed; bottom: 20px; right: 20px; background-color: #25d366; color: white; padding: 12px 20px; border-radius: 50px; font-weight: bold; text-decoration: none; box-shadow: 2px 2px 10px rgba(0,0,0,0.3); z-index: 9999; display: flex; align-items: center; gap: 8px;">
+<a href="https://wa.me/51970134165?text=Hola,%20deseo%20solicitar%20una%20cotización" target="_blank" style="position: fixed; bottom: 20px; right: 20px; background-color: #25d366; color: white; padding: 12px 20px; border-radius: 50px; font-weight: bold; text-decoration: none; box-shadow: 2px 2px 10px rgba(0,0,0,0.3); z-index: 9999; display: flex; align-items: center; gap: 8px;">
   💬 Cotizar por WhatsApp
 </a>
 
@@ -83,7 +83,7 @@ Encuéntranos en nuestras plataformas oficiales:
 ## CONTACTOS
 ¿Tienes consultas o necesitas una cotización rápida?
 
-- 📞 **Teléfono:** [+51 999 999 999](tel:+51999999999)
-- 💬 **WhatsApp:** [Enviar mensaje directo](https://wa.me/51999999999?text=Hola,%20deseo%20solicitar%20una%20cotización)
+- 📞 **Teléfono:** [+51 970 134 165](tel:+51970134165)
+- 💬 **WhatsApp:** [Enviar mensaje directo](https://wa.me/51970134165?text=Hola,%20deseo%20solicitar%20una%20cotización)
 - ✉️ **Correo:** contacto@tudominio.com
 - 📍 **Ubicación:** Lima, Perú
