@@ -1,6 +1,5 @@
 # PRISMA STONE
-# Bienvenidos a Nuestro Sitio Web
-
+D & E PRISMA STONE E.I.R.L. | Acabados Stone Magnificos | RUC: 20613717723
 <!-- MENÚ DE NAVEGACIÓN SUPERIOR -->
 <div style="background-color: #1a252f; padding: 12px; border-radius: 8px; text-align: center; margin-bottom: 20px; position: sticky; top: 0; z-index: 1000;">
   <a href="#nosotros" style="color: white; background-color: #34495e; padding: 8px 14px; text-decoration: none; border-radius: 4px; font-weight: bold; margin: 3px; display: inline-block;">NOSOTROS</a>
@@ -39,13 +38,17 @@
 <a id="nosotros"></a>
 ## NOSOTROS
 ¿Qué hacemos?
-En PRISMA STONE nos especializamos en la venta e instalación profesional de acabados generales de alta calidad. Transformamos espacios comerciales y residenciales mediante el trabajo experto en mármol, granito, cuarzo, piedra sinterizada, terrazos y melamine.
+---
+En PRISMA STONE nos especializamos en la venta e instalación profesional de acabados generales de alta calidad; Transformamos espacios comerciales y residenciales mediante el trabajo experto en mármol, granito, cuarzo, piedra sinterizada, terrazos y melamine.
 
-Misión
+Misión 
+---
 Ofrecer soluciones integrales en recubrimientos y acabados de primera clase, garantizando máxima precisión en la instalación y materiales de alta durabilidad para superar las expectativas de diseño y funcionalidad de nuestros clientes.
 
 Visión
+---
 Consolidarnos como una empresa líder y referente en el sector de acabados arquitectónicos, destacando por la excelencia técnica, la innovación en materiales y la satisfacción garantizada en cada proyecto.
+
 ---
 
 <a id="servicios"></a>
@@ -92,5 +95,4 @@ Encuéntranos en nuestras plataformas oficiales:
 
 - 📞 **Teléfono:** [+51 970 134 165](tel:+51970134165)
 - 💬 **WhatsApp:** [Enviar mensaje directo](https://wa.me/51970134165?text=Hola,%20deseo%20solicitar%20una%20cotización)
-- ✉️ **Correo:** contacto@tudominio.com
 - 📍 **Ubicación:** Lima, Perú
