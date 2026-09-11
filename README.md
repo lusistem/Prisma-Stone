@@ -86,11 +86,30 @@ Espacio reservado para novedades, recomendaciones o artículos relacionados con 
 
 <a id="redes"></a>
 ## REDES SOCIALES
-Encuéntranos en nuestras plataformas oficiales:
-- [Facebook](https://facebook.com)
-- [Instagram](https://instagram.com)
-- [TikTok](https://tiktok.com)
 
+<p>Síguenos en nuestras plataformas oficiales para conocer más de nuestros proyectos y acabados:</p>
+
+<div style="display: flex; gap: 15px; align-items: center; flex-wrap: wrap; margin-top: 15px;">
+
+  <!-- FACEBOOK -->
+  <a href="https://facebook.com/profile.php?id=100064177080893" target="_blank" style="display: flex; align-items: center; gap: 10px; background-color: #1877f2; color: white; padding: 10px 18px; text-decoration: none; border-radius: 8px; font-weight: bold; font-family: Arial, sans-serif;">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" style="width: 24px; height: 24px; filter: invert(1);">
+    Facebook
+  </a>
+
+  <!-- INSTAGRAM -->
+  <a href="https://instagram.com/prisma.stone" target="_blank" style="display: flex; align-items: center; gap: 10px; background-color: #e1306c; color: white; padding: 10px 18px; text-decoration: none; border-radius: 8px; font-weight: bold; font-family: Arial, sans-serif;">
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" style="width: 24px; height: 24px; filter: invert(1);">
+    Instagram
+  </a>
+
+  <!-- TIKTOK -->
+  <a href="https://tiktok.com/@tu_usuario" target="_blank" style="display: flex; align-items: center; gap: 10px; background-color: #000000; color: white; padding: 10px 18px; text-decoration: none; border-radius: 8px; font-weight: bold; font-family: Arial, sans-serif;">
+    <img src="https://cdn-icons-png.flaticon.com/512/3046/3046124.png" alt="TikTok" style="width: 24px; height: 24px; filter: invert(1);">
+    TikTok
+  </a>
+
+</div>
 ---
 
 <a id="contactos"></a>
