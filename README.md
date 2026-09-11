@@ -40,6 +40,8 @@ D & E PRISMA STONE E.I.R.L. | Acabados Stone Magnificos | RUC: 20613717723
 ¿Qué hacemos?
 ---
 En PRISMA STONE nos especializamos en la venta e instalación profesional de acabados generales de alta calidad; Transformamos espacios comerciales y residenciales mediante el trabajo experto en mármol, granito, cuarzo, piedra sinterizada, terrazos y melamine.
+<img width="800" height="300" alt="Prisma Stone - Muestras" src="https://github.com/user-attachments/assets/e94b9e4a-921e-4057-9afe-63ecd3ea3437" />
+
 
 Misión 
 ---
@@ -58,6 +60,7 @@ Consolidarnos como una empresa líder y referente en el sector de acabados arqui
 * Venta e instalación de terrazos: Soluciones continuas y duraderas para pisos y superficies.
 * Mobiliario en melamine: Fabricación e instalación de muebles a medida para cocina, closet y oficina.
 * Servicios generales de acabado: Asesoría, corte, pulido e instalación técnica integral.
+<img width="851" height="315" alt="Mueble de cocina - Prisma Stone" src="https://github.com/user-attachments/assets/a7fbe417-fbbc-4616-bd9c-82769ac69528" />
 
 ---
 
@@ -70,6 +73,7 @@ Presentación de proyectos finalizados en cocinas, comedores, baños, escaleras,
 <img width="2016" height="1184" alt="luxury_quartz_dining_table" src="https://github.com/user-attachments/assets/c13c4c4b-7786-489c-8014-321ec35a69da" />
 <img width="1920" height="1280" alt="overhead_granite_meeting_table" src="https://github.com/user-attachments/assets/e5ecb0ca-aa20-4326-9c9b-f89ad738610e" />
 <img width="2096" height="1184" alt="black_galaxy_staircase_1" src="https://github.com/user-attachments/assets/65ee4ef6-ae5a-4a57-8315-5b3a6476fd0b" />
+D & E PRISMA STONE E.I.R.L. | Acabados Stone Magnificos | RUC: 20613717723
 
 
 ---
