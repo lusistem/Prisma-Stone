@@ -118,4 +118,11 @@ D & E PRISMA STONE E.I.R.L. | Acabados Stone Magnificos | RUC: 20613717723
 
 - 📞 **Teléfono:** [+51 970 134 165](tel:+51970134165)
 - 💬 **WhatsApp:** [Enviar mensaje directo](https://wa.me/51970134165?text=Hola,%20deseo%20solicitar%20una%20cotización)
-- 📍 **Ubicación:** Lima, Perú
+- 📍 **Támbién nos puedes ubicar en:** Av. Jose Olaya Nro. 342 P.J. Vallecito Alto, Villa Maria del Triunfo, Lima, Perú
+- 📅 **Horario de Atención:**
+       Lunes - Viernes 8:00am a 4:00pm /
+       Sábado 9:00am a 2:00pm /
+       Domingos - Cerrado
+
+## GRACIAS POR SU VISITA!
+   PRISMA STONE
