@@ -15,11 +15,10 @@ D & E PRISMA STONE E.I.R.L. | Acabados Stone Magnificos | RUC: 20613717723
 <!-- BANNER / CARRUSEL DE IMÁGENES A ANCHO COMPLETO -->
 <div style="width: 100%; margin-bottom: 25px;">
   <div style="display: flex; gap: 15px; overflow-x: auto; width: 100%; padding-bottom: 15px; scroll-snap-type: x mandatory;">
-<img width="1366" height="768" alt="Blanco Negro Collage Fotos Sitio web de enlace en perfil" src="https://github.com/user-attachments/assets/9b5cd5a2-51b7-4449-80fc-cd44bc1d357f" style="width: 100%; min-width: 100%; height: 450px; object-fit: cover; border-radius: 8px; flex-shrink: 0; scroll-snap-align: start;">
+<img width="1366" height="768" alt="Portada 2 - Prisma Stone" src="https://github.com/user-attachments/assets/357a46ad-3efd-461d-ad0f-c9d8b3258cc4" style="width: 100%; min-width: 100%; height: 450px; object-fit: cover; border-radius: 8px; flex-shrink: 0; scroll-snap-align: start;">
 <img width="1195" height="896" alt="Prisma Stone Cuarzo Blanco Nieve" src="https://github.com/user-attachments/assets/1271a1b7-7874-458e-9675-80d104b97e8a" style="width: 100%; min-width: 100%; height: 450px; object-fit: cover; border-radius: 8px; flex-shrink: 0; scroll-snap-align: start;">
 <img width="1264" height="842" alt="Prisma Stone Granito Negro Galaxy" src="https://github.com/user-attachments/assets/4fb97e1d-fc84-47a0-b721-507bd8aec0d4" style="width: 100%; min-width: 100%; height: 450px; object-fit: cover; border-radius: 8px; flex-shrink: 0; scroll-snap-align: start;">
   </div>
-  
 
 <!-- BOTÓN DIRECTO DE LLAMADA / CONTACTO -->
 <div style="text-align: center; margin-top: 15px;">
@@ -41,7 +40,9 @@ D & E PRISMA STONE E.I.R.L. | Acabados Stone Magnificos | RUC: 20613717723
 <!-- SECCIONES DE CONTENIDO -->
 
 <a id="nosotros"></a>
+
 ## NOSOTROS
+
 ¿Qué hacemos?
 ---
 En PRISMA STONE nos especializamos en la venta e instalación profesional de acabados generales de alta calidad; Transformamos espacios comerciales y residenciales mediante el trabajo experto en mármol, granito, cuarzo, piedra sinterizada, terrazos y melamine.
@@ -59,6 +60,7 @@ Consolidarnos como una empresa líder y referente en el sector de acabados arqui
 ---
 
 <a id="servicios"></a>
+
 ## SERVICIOS
 * Venta e instalación de piedra natural: Mármol y granito para tableros, pisos y revestimientos.
 * Superficies de ingeniería: Suministro y colocación de cuarzo y piedra sinterizada.
@@ -70,6 +72,7 @@ Consolidarnos como una empresa líder y referente en el sector de acabados arqui
 ---
 
 <a id="trabajos"></a>
+
 ## TRABAJOS
 Presentación de proyectos ejecutados en cocinas, comedores, baños, escaleras y entornos comerciales.
 * Materiales: Mármol, granito, cuarzo, piedra sinterizada, terrazos y melamine.
@@ -85,6 +88,7 @@ D & E PRISMA STONE E.I.R.L. | Acabados Stone Magnificos | RUC: 20613717723
 ---
 
 <a id="redes"></a>
+
 ## REDES SOCIALES
 
 <p>Síguenos en nuestras plataformas oficiales para conocer más de nuestros proyectos y acabados:</p>
@@ -113,6 +117,7 @@ D & E PRISMA STONE E.I.R.L. | Acabados Stone Magnificos | RUC: 20613717723
 ---
 
 <a id="contactos"></a>
+
 ## CONTACTOS
 ¿Tienes consultas o necesitas una cotización rápida?
 
