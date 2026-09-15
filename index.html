@@ -24,11 +24,26 @@
       text-align: center;
       padding: 25px 15px;
     }
+    .header-logo-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 8px;
+    }
+    .header-logo-img {
+      width: 45px;
+      height: 45px;
+      object-fit: contain;
+      border-radius: 50%;
+      background-color: #ffffff;
+      padding: 3px;
+    }
     header h1 {
-      font-size: 26px;
+      font-size: 28px;
       letter-spacing: 1px;
-      margin-bottom: 5px;
       color: #ffffff;
+      margin: 0;
     }
     header p {
       font-size: 13px;
@@ -100,7 +115,6 @@
     .cta-btn:hover {
       background-color: #0056b3;
     }
-    /* BOTÓN FLOTANTE CON COLORES OFICIALES DE WHATSAPP */
     .whatsapp-float {
       position: fixed;
       bottom: 20px;
@@ -195,7 +209,6 @@
     .social-btn:hover {
       opacity: 0.9;
     }
-    /* Estilos de botones sociales con tarjetas blancas limpias o branding oficial */
     .btn-facebook {
       background-color: #1877f2;
     }
@@ -235,9 +248,12 @@
 </head>
 <body>
 
-  <!-- ENCABEZADO PRINCIPAL -->
+  <!-- ENCABEZADO PRINCIPAL CON LOGO DE LA EMPRESA -->
   <header>
-    <h1>PRISMA STONE</h1>
+    <div class="header-logo-container">
+      <img src="https://github.com/user-attachments/assets/03c86b27-b1be-4d3d-8bbc-0696bc0de880" alt="Logo Prisma Stone" class="header-logo-img">
+      <h1>PRISMA STONE</h1>
+    </div>
     <p>D & E PRISMA STONE E.I.R.L. | Acabados Stone Magníficos | RUC: 20613717723</p>
   </header>
 
@@ -316,15 +332,12 @@
       <p>Síguenos en nuestras plataformas oficiales para conocer más de nuestros proyectos y acabados:</p>
 
       <div class="social-links">
-        <!-- Facebook Oficial -->
         <a href="https://facebook.com/profile.php?id=100064177080893" target="_blank" class="social-btn btn-facebook">
           <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg" alt="Facebook" style="width: 24px; height: 24px;"> Facebook
         </a>
-        <!-- Instagram Oficial -->
         <a href="https://instagram.com/prisma.stone" target="_blank" class="social-btn btn-instagram">
           <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram" style="width: 24px; height: 24px;"> Instagram
         </a>
-        <!-- TikTok Oficial -->
         <a href="https://tiktok.com/@.prisma.stone?_r=1&_t=ZS-99eVKhTyEmP" target="_blank" class="social-btn btn-tiktok">
           <img src="https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" alt="TikTok" style="width: 24px; height: 24px; background: white; border-radius: 50%; padding: 2px;"> TikTok
         </a>
@@ -357,7 +370,7 @@
 
   </div>
 
-  <!-- BOTÓN FLOTANTE DE WHATSAPP CON ICONO OFICIAL -->
+  <!-- BOTÓN FLOTANTE DE WHATSAPP -->
   <a href="https://wa.me/51970134165?text=Hola,%20deseo%20solicitar%20una%20cotización" target="_blank" class="whatsapp-float">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 26px; height: 26px;">
     Cotizar por WhatsApp
