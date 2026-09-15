@@ -79,24 +79,35 @@
       margin: 0 auto;
       padding: 20px 15px;
     }
+
+    /* CARRUSEL OPTIMIZADO */
     .carousel-container {
+      position: relative;
       width: 100%;
-      margin-bottom: 20px;
-      display: flex;
-      gap: 15px;
-      overflow-x: auto;
-      padding-bottom: 15px;
-      scroll-snap-type: x mandatory;
-    }
-    .carousel-container img {
-      width: 100%;
-      min-width: 100%;
       height: 380px;
-      object-fit: cover;
+      margin-bottom: 20px;
+      overflow: hidden;
       border-radius: 8px;
-      flex-shrink: 0;
-      scroll-snap-align: start;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     }
+    .carousel-slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 0.8s ease-in-out;
+    }
+    .carousel-slide.active {
+      opacity: 1;
+    }
+    .carousel-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
     .cta-btn-container {
       text-align: center;
       margin: 20px 0 30px 0;
@@ -245,6 +256,12 @@
     footer p {
       margin-bottom: 0;
     }
+
+    @media (max-width: 600px) {
+      .carousel-container {
+        height: 220px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -269,18 +286,18 @@
 
   <div class="container">
 
-    <!-- CARRUSEL DE PORTADAS -->
-<div class="carousel-container">
-    <div class="carousel-slide active">
-        <img src="https://github.com/lusistem/Prisma-Stone/blob/main/Banner1.png" alt="Banner 1">
+    <!-- CARRUSEL DE PORTADAS (RUTAS RAW CORREGIDAS) -->
+    <div class="carousel-container">
+      <div class="carousel-slide active">
+        <img src="https://raw.githubusercontent.com/lusistem/Prisma-Stone/main/Banner1.png" alt="Banner 1">
+      </div>
+      <div class="carousel-slide">
+        <img src="https://raw.githubusercontent.com/lusistem/Prisma-Stone/main/Banner2.png" alt="Banner 2">
+      </div>
+      <div class="carousel-slide">
+        <img src="https://raw.githubusercontent.com/lusistem/Prisma-Stone/main/Banner3.png" alt="Banner 3">
+      </div>
     </div>
-    <div class="carousel-slide">
-        <img src="https://github.com/lusistem/Prisma-Stone/blob/main/Banner2.png" alt="Banner 2">
-    </div>
-    <div class="carousel-slide">
-        <img src="https://github.com/lusistem/Prisma-Stone/blob/main/Banner3.png" alt="Banner 3">
-    </div>
-</div>
     
     <!-- BOTÓN DE LLAMADA DIRECTA -->
     <div class="cta-btn-container">
@@ -383,5 +400,21 @@
     Cotizar por WhatsApp
   </a>
 
+  <!-- SCRIPT PARA INTERACTIVIDAD Y AUTOMATIZACIÓN DEL CARRUSEL -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const slides = document.querySelectorAll('.carousel-slide');
+      let currentSlide = 0;
+
+      function nextSlide() {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add('active');
+      }
+
+      // Cambiar de banner cada 4 segundos automáticamente
+      setInterval(nextSlide, 4000);
+    });
+  </script>
 </body>
 </html>
