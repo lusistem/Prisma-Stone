@@ -1,131 +1,345 @@
-<link rel="icon" type="image/png" href="https://github.com/user-attachments/assets/03c86b27-b1be-4d3d-8bbc-0696bc0de880">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D & E PRISMA STONE E.I.R.L.</title>
+  <link rel="icon" type="image/png" href="https://github.com/user-attachments/assets/03c86b27-b1be-4d3d-8bbc-0696bc0de880">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f4f6f8;
+      padding-bottom: 60px;
+    }
+    header {
+      background-color: #1a252f;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+    }
+    header h1 {
+      font-size: 26px;
+      letter-spacing: 1px;
+      margin-bottom: 5px;
+      color: #ffffff;
+    }
+    header p {
+      font-size: 13px;
+      color: #bdc3c7;
+    }
+    nav {
+      background-color: #2c3e50;
+      padding: 10px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    nav a {
+      color: white;
+      background-color: #34495e;
+      padding: 8px 14px;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+      margin: 3px;
+      display: inline-block;
+      font-size: 13px;
+      transition: background-color 0.3s;
+    }
+    nav a:hover {
+      background-color: #007bff;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px 15px;
+    }
+    .carousel-container {
+      width: 100%;
+      margin-bottom: 20px;
+      display: flex;
+      gap: 15px;
+      overflow-x: auto;
+      padding-bottom: 15px;
+      scroll-snap-type: x mandatory;
+    }
+    .carousel-container img {
+      width: 100%;
+      min-width: 100%;
+      height: 380px;
+      object-fit: cover;
+      border-radius: 8px;
+      flex-shrink: 0;
+      scroll-snap-align: start;
+    }
+    .cta-btn-container {
+      text-align: center;
+      margin: 20px 0 30px 0;
+    }
+    .cta-btn {
+      background-color: #007bff;
+      color: white;
+      padding: 14px 28px;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: bold;
+      font-size: 15px;
+      display: inline-block;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+      transition: background-color 0.3s;
+    }
+    .cta-btn:hover {
+      background-color: #0056b3;
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 50px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 2px 4px 12px rgba(0,0,0,0.3);
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+    }
+    section {
+      background: white;
+      padding: 25px;
+      margin-bottom: 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    h2 {
+      color: #1a252f;
+      border-bottom: 2px solid #007bff;
+      padding-bottom: 8px;
+      margin-bottom: 15px;
+      font-size: 20px;
+    }
+    h3 {
+      color: #2c3e50;
+      margin: 18px 0 8px 0;
+      font-size: 16px;
+    }
+    p {
+      margin-bottom: 10px;
+      font-size: 15px;
+    }
+    ul {
+      margin-left: 20px;
+      margin-bottom: 15px;
+    }
+    ul li {
+      margin-bottom: 8px;
+      font-size: 15px;
+    }
+    .section-img {
+      width: 100%;
+      max-height: 350px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin: 15px 0;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .social-links {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 15px;
+    }
+    .social-btn {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: white;
+      padding: 10px 18px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .contact-list {
+      list-style: none;
+      margin-left: 0;
+    }
+    .contact-list li {
+      margin-bottom: 12px;
+    }
+    .contact-list a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .contact-list a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1a252f;
+      color: white;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+    footer p {
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body>
 
-## PRISMA STONE
-D & E PRISMA STONE E.I.R.L. | Acabados Stone Magnificos | RUC: 20613717723
+  <!-- ENCABEZADO PRINCIPAL -->
+  <header>
+    <h1>PRISMA STONE</h1>
+    <p>D & E PRISMA STONE E.I.R.L. | Acabados Stone Magníficos | RUC: 20613717723</p>
+  </header>
 
-<!-- MENÚ DE NAVEGACIÓN SUPERIOR -->
-<div style="background-color: #1a252f; padding: 12px; border-radius: 8px; text-align: center; margin-bottom: 20px; position: sticky; top: 0; z-index: 1000;">
-  <a href="#nosotros" style="color: white; background-color: #34495e; padding: 8px 14px; text-decoration: none; border-radius: 4px; font-weight: bold; margin: 3px; display: inline-block;">NOSOTROS</a>
-  <a href="#servicios" style="color: white; background-color: #34495e; padding: 8px 14px; text-decoration: none; border-radius: 4px; font-weight: bold; margin: 3px; display: inline-block;">SERVICIOS</a>
-  <a href="#trabajos" style="color: white; background-color: #34495e; padding: 8px 14px; text-decoration: none; border-radius: 4px; font-weight: bold; margin: 3px; display: inline-block;">TRABAJOS</a>
-  <a href="#redes" style="color: white; background-color: #34495e; padding: 8px 14px; text-decoration: none; border-radius: 4px; font-weight: bold; margin: 3px; display: inline-block;">REDES SOCIALES</a>
-  <a href="#contactos" style="color: white; background-color: #34495e; padding: 8px 14px; text-decoration: none; border-radius: 4px; font-weight: bold; margin: 3px; display: inline-block;">CONTACTOS</a>
-</div>
+  <!-- MENÚ DE NAVEGACIÓN -->
+  <nav>
+    <a href="#nosotros">NOSOTROS</a>
+    <a href="#servicios">SERVICIOS</a>
+    <a href="#trabajos">TRABAJOS</a>
+    <a href="#redes">REDES SOCIALES</a>
+    <a href="#contactos">CONTACTOS</a>
+  </nav>
 
-<!-- BANNER / CARRUSEL DE IMÁGENES A ANCHO COMPLETO -->
-<div style="width: 100%; margin-bottom: 25px;">
-  <div style="display: flex; gap: 15px; overflow-x: auto; width: 100%; padding-bottom: 15px; scroll-snap-type: x mandatory;">
-<img width="1366" height="768" alt="Portada 2 - Prisma Stone" src="https://github.com/user-attachments/assets/da1acebf-baca-4e70-a1dd-73e9b7693981" style="width: 100%; min-width: 100%; height: 450px; object-fit: cover; border-radius: 8px; flex-shrink: 0; scroll-snap-align: start;">
-<img width="1195" height="896" alt="Prisma Stone Cuarzo Blanco Nieve" src="https://github.com/user-attachments/assets/1271a1b7-7874-458e-9675-80d104b97e8a" style="width: 100%; min-width: 100%; height: 450px; object-fit: cover; border-radius: 8px; flex-shrink: 0; scroll-snap-align: start;">
-<img width="1264" height="842" alt="Prisma Stone Granito Negro Galaxy" src="https://github.com/user-attachments/assets/4fb97e1d-fc84-47a0-b721-507bd8aec0d4" style="width: 100%; min-width: 100%; height: 450px; object-fit: cover; border-radius: 8px; flex-shrink: 0; scroll-snap-align: start;">
+  <div class="container">
+
+    <!-- CARRUSEL DE PORTADAS -->
+    <div class="carousel-container">
+      <img src="https://github.com/user-attachments/assets/da1acebf-baca-4e70-a1dd-73e9b7693981" alt="Portada - Prisma Stone">
+      <img src="https://github.com/user-attachments/assets/1271a1b7-7874-458e-9675-80d104b97e8a" alt="Prisma Stone Cuarzo Blanco Nieve">
+      <img src="https://github.com/user-attachments/assets/4fb97e1d-fc84-47a0-b721-507bd8aec0d4" alt="Prisma Stone Granito Negro Galaxy">
+    </div>
+
+    <!-- BOTÓN DE LLAMADA DIRECTA -->
+    <div class="cta-btn-container">
+      <a href="tel:+51970134165" class="cta-btn">📞 SOLICITAR COTIZACIÓN (+51 970 134 165)</a>
+    </div>
+
+    <!-- SECCIÓN NOSOTROS -->
+    <section id="nosotros">
+      <h2>NOSOTROS</h2>
+      <h3>¿Qué hacemos?</h3>
+      <p>En PRISMA STONE nos especializamos en la venta e instalación profesional de acabados generales de alta calidad. Transformamos espacios comerciales y residenciales mediante el trabajo experto en mármol, granito, cuarzo, piedra sinterizada, terrazos y melamine.</p>
+      <img src="https://github.com/user-attachments/assets/e94b9e4a-921e-4057-9afe-63ecd3ea3437" alt="Prisma Stone - Muestras" class="section-img">
+
+      <h3>Misión</h3>
+      <p>Ofrecer soluciones integrales en recubrimientos y acabados de primera clase, garantizando máxima precisión en la instalación y materiales de alta durabilidad para superar las expectativas de diseño y funcionalidad de nuestros clientes.</p>
+
+      <h3>Visión</h3>
+      <p>Consolidarnos como una empresa líder y referente en el sector de acabados arquitectónicos, destacando por la excelencia técnica, la innovación en materiales y la satisfacción garantizada en cada proyecto.</p>
+    </section>
+
+    <!-- SECCIÓN SERVICIOS -->
+    <section id="servicios">
+      <h2>SERVICIOS</h2>
+      <ul>
+        <li><strong>Venta e instalación de piedra natural:</strong> Mármol y granito para tableros, pisos y revestimientos.</li>
+        <li><strong>Superficies de ingeniería:</strong> Suministro y colocación de cuarzo y piedra sinterizada.</li>
+        <li><strong>Venta e instalación de terrazos:</strong> Soluciones continuas y duraderas para pisos y superficies.</li>
+        <li><strong>Mobiliario en melamine:</strong> Fabricación e instalación de muebles a medida para cocina, closet y oficina.</li>
+        <li><strong>Servicios generales de acabado:</strong> Asesoría, corte, pulido e instalación técnica integral.</li>
+      </ul>
+      <img src="https://github.com/user-attachments/assets/a7fbe417-fbbc-4616-bd9c-82769ac69528" alt="Mueble de cocina - Prisma Stone" class="section-img">
+    </section>
+
+    <!-- SECCIÓN TRABAJOS -->
+    <section id="trabajos">
+      <h2>TRABAJOS</h2>
+      <p>Presentación de proyectos ejecutados en cocinas, comedores, baños, escaleras y entornos comerciales.</p>
+      <ul>
+        <li><strong>Materiales:</strong> Mármol, granito, cuarzo, piedra sinterizada, terrazos y melamine.</li>
+        <li><strong>Garantía:</strong> Más de 20 años de experiencia entregando acabados de primer nivel y máxima precisión.</li>
+      </ul>
+
+      <div class="gallery">
+        <img src="https://github.com/user-attachments/assets/75202ad1-4b54-44dd-a3bf-fdc9c5a906bf" alt="Cocina de lujo">
+        <img src="https://github.com/user-attachments/assets/b431b6ad-705a-4c65-bdba-72ff872753b2" alt="Acabado en esquina">
+        <img src="https://github.com/user-attachments/assets/b3eb31b7-bdf9-48c9-99c2-54b48c28ddee" alt="Baño en mármol negro">
+        <img src="https://github.com/user-attachments/assets/c13c4c4b-7786-489c-8014-321ec35a69da" alt="Mesa de comedor en cuarzo">
+        <img src="https://github.com/user-attachments/assets/e5ecb0ca-aa20-4326-9c9b-f89ad738610e" alt="Mesa de reuniones en granito">
+        <img src="https://github.com/user-attachments/assets/65ee4ef6-ae5a-4a57-8315-5b3a6476fd0b" alt="Escalera en negro galaxy">
+      </div>
+    </section>
+
+    <!-- SECCIÓN REDES SOCIALES -->
+    <section id="redes">
+      <h2>REDES SOCIALES</h2>
+      <p>Síguenos en nuestras plataformas oficiales para conocer más de nuestros proyectos y acabados:</p>
+
+      <div class="social-links">
+        <a href="https://facebook.com/profile.php?id=100064177080893" target="_blank" class="social-btn" style="background-color: #1877f2;">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" style="width: 22px; height: 22px; filter: invert(1);"> Facebook
+        </a>
+        <a href="https://instagram.com/prisma.stone" target="_blank" class="social-btn" style="background-color: #e1306c;">
+          <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" style="width: 22px; height: 22px; filter: invert(1);"> Instagram
+        </a>
+        <a href="https://tiktok.com/@.prisma.stone?_r=1&_t=ZS-99eVKhTyEmP" target="_blank" class="social-btn" style="background-color: #000000;">
+          <img src="https://cdn-icons-png.flaticon.com/512/3046/3046124.png" alt="TikTok" style="width: 22px; height: 22px; filter: invert(1);"> TikTok
+        </a>
+      </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTOS -->
+    <section id="contactos">
+      <h2>CONTACTOS</h2>
+      <p>¿Tienes consultas o necesitas una cotización rápida?</p>
+      <br>
+      <ul class="contact-list">
+        <li>📞 <strong>Teléfono:</strong> <a href="tel:+51970134165">+51 970 134 165</a></li>
+        <li>💬 <strong>WhatsApp:</strong> <a href="https://wa.me/51970134165?text=Hola,%20deseo%20solicitar%20una%20cotización" target="_blank">Enviar mensaje directo</a></li>
+        <li>📍 <strong>Ubicación:</strong> Av. Jose Olaya Nro. 342 P.J. Vallecito Alto, Villa María del Triunfo, Lima, Perú</li>
+        <li>📅 <strong>Horario de Atención:</strong>
+          <ul style="margin-top: 5px;">
+            <li>Lunes - Viernes: 8:00am a 4:00pm</li>
+            <li>Sábado: 9:00am a 2:00pm</li>
+            <li>Domingos: Cerrado</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>¡GRACIAS POR SU VISITA!</p>
+      <p><strong>D & E PRISMA STONE E.I.R.L.</strong></p>
+    </footer>
+
   </div>
-  
-<!-- BOTÓN DIRECTO DE LLAMADA / CONTACTO -->
-<div style="text-align: center; margin-top: 15px;">
-  <a href="#contactos" style="background-color: #007bff; color: white; padding: 14px 28px; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 16px; display: inline-block; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-    📞 SOLICITAR COTIZACIÓN ( +51 970 134 165 )
-  </a>
-</div>
 
-
-<!-- BOTÓN FLOTANTE DE WHATSAPP CON LOGO -->
-<a href="https://wa.me/51970134165?text=Hola,%20deseo%20solicitar%20una%20cotización" target="_blank" style="position: fixed; bottom: 20px; right: 20px; background-color: #25d366; color: white; padding: 12px 20px; border-radius: 50px; font-weight: bold; text-decoration: none; box-shadow: 2px 2px 10px rgba(0,0,0,0.3); z-index: 9999; display: flex; align-items: center; gap: 10px; font-family: Arial, sans-serif;">
-  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" style="width: 26px; height: 26px; filter: invert(1);">
-  Cotizar por WhatsApp
-</a>
-
-
----
-
-<!-- SECCIONES DE CONTENIDO -->
-
-<a id="nosotros"></a>
-
-## NOSOTROS
-¿Qué hacemos?
----
-En PRISMA STONE nos especializamos en la venta e instalación profesional de acabados generales de alta calidad; Transformamos espacios comerciales y residenciales mediante el trabajo experto en mármol, granito, cuarzo, piedra sinterizada, terrazos y melamine.
-<img width="800" height="300" alt="Prisma Stone - Muestras" src="https://github.com/user-attachments/assets/e94b9e4a-921e-4057-9afe-63ecd3ea3437" />
-
-
-Misión 
----
-Ofrecer soluciones integrales en recubrimientos y acabados de primera clase, garantizando máxima precisión en la instalación y materiales de alta durabilidad para superar las expectativas de diseño y funcionalidad de nuestros clientes.
-
-Visión
----
-Consolidarnos como una empresa líder y referente en el sector de acabados arquitectónicos, destacando por la excelencia técnica, la innovación en materiales y la satisfacción garantizada en cada proyecto.
-
----
-
-<a id="servicios"></a>
-
-## SERVICIOS
-* Venta e instalación de piedra natural: Mármol y granito para tableros, pisos y revestimientos.
-* Superficies de ingeniería: Suministro y colocación de cuarzo y piedra sinterizada.
-* Venta e instalación de terrazos: Soluciones continuas y duraderas para pisos y superficies.
-* Mobiliario en melamine: Fabricación e instalación de muebles a medida para cocina, closet y oficina.
-* Servicios generales de acabado: Asesoría, corte, pulido e instalación técnica integral.
-<img width="851" height="315" alt="Mueble de cocina - Prisma Stone" src="https://github.com/user-attachments/assets/a7fbe417-fbbc-4616-bd9c-82769ac69528" />
-
----
-
-<a id="trabajos"></a>
-
-## TRABAJOS
-Presentación de proyectos ejecutados en cocinas, comedores, baños, escaleras y entornos comerciales.
-* Materiales: Mármol, granito, cuarzo, piedra sinterizada, terrazos y melamine.
-* Garantía: Más de 20 años de experiencia entregando acabados de primer nivel y máxima precisión.
-<img width="1920" height="1280" alt="luxury_warm_kitchen (1)" src="https://github.com/user-attachments/assets/75202ad1-4b54-44dd-a3bf-fdc9c5a906bf" />
-<img width="1920" height="1280" alt="luxury_mitre_corner" src="https://github.com/user-attachments/assets/b431b6ad-705a-4c65-bdba-72ff872753b2" />
-<img width="1920" height="1280" alt="luxurious_black_marble_bathroom" src="https://github.com/user-attachments/assets/b3eb31b7-bdf9-48c9-99c2-54b48c28ddee" />
-<img width="2016" height="1184" alt="luxury_quartz_dining_table" src="https://github.com/user-attachments/assets/c13c4c4b-7786-489c-8014-321ec35a69da" />
-<img width="1920" height="1280" alt="overhead_granite_meeting_table" src="https://github.com/user-attachments/assets/e5ecb0ca-aa20-4326-9c9b-f89ad738610e" />
-<img width="2096" height="1184" alt="black_galaxy_staircase_1" src="https://github.com/user-attachments/assets/65ee4ef6-ae5a-4a57-8315-5b3a6476fd0b" />
-D & E PRISMA STONE E.I.R.L. | Acabados Stone Magnificos | RUC: 20613717723
-
----
-
-<a id="redes"></a>
-
-## REDES SOCIALES
-
-<p>Síguenos en nuestras plataformas oficiales para conocer más de nuestros proyectos y acabados:</p>
-
-<div style="display: flex; gap: 15px; align-items: center; flex-wrap: wrap; margin-top: 15px;">
-
-  <!-- FACEBOOK -->
-  <a href="https://facebook.com/profile.php?id=100064177080893" target="_blank" style="display: flex; align-items: center; gap: 10px; background-color: #1877f2; color: white; padding: 10px 18px; text-decoration: none; border-radius: 8px; font-weight: bold; font-family: Arial, sans-serif;">
-    <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" style="width: 24px; height: 24px; filter: invert(1);">
-    Facebook
+  <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+  <a href="https://wa.me/51970134165?text=Hola,%20deseo%20solicitar%20una%20cotización" target="_blank" class="whatsapp-float">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" style="width: 24px; height: 24px; filter: invert(1);">
+    Cotizar por WhatsApp
   </a>
 
-  <!-- INSTAGRAM -->
-  <a href="https://instagram.com/prisma.stone" target="_blank" style="display: flex; align-items: center; gap: 10px; background-color: #e1306c; color: white; padding: 10px 18px; text-decoration: none; border-radius: 8px; font-weight: bold; font-family: Arial, sans-serif;">
-    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" style="width: 24px; height: 24px; filter: invert(1);">
-    Instagram
-  </a>
-
-  <!-- TIKTOK -->
-  <a href="https://tiktok.com/@.prisma.stone?_r=1&_t=ZS-99eVKhTyEmP" target="_blank" style="display: flex; align-items: center; gap: 10px; background-color: #000000; color: white; padding: 10px 18px; text-decoration: none; border-radius: 8px; font-weight: bold; font-family: Arial, sans-serif;">
-    <img src="https://cdn-icons-png.flaticon.com/512/3046/3046124.png" alt="TikTok" style="width: 24px; height: 24px; filter: invert(1);">
-    TikTok
-  </a>
-
-</div>
-
-<a id="contactos"></a>
-
-## CONTACTOS
-¿Tienes consultas o necesitas una cotización rápida?
-
-* 📞 Teléfono: [+51 970 134 165](tel:+51970134165)
-* 💬 WhatsApp: [Enviar mensaje directo](https://wa.me/51970134165?text=Hola,%20deseo%20solicitar%20una%20cotización)
-* 📍 Támbién nos puedes ubicar en: Av. Jose Olaya Nro. 342 P.J. Vallecito Alto, Villa Maria del Triunfo, Lima, Perú
-* 📅 Horario de Atención:
-       Lunes - Viernes 8:00am a 4:00pm /
-       Sábado 9:00am a 2:00pm /
-       Domingos - Cerrado
-
-## GRACIAS POR SU VISITA!
-   PRISMA STONE
+</body>
+</html>
