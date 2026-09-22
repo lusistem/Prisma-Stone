@@ -34,15 +34,7 @@
       gap: 12px;
       margin-bottom: 8px;
     }
-    /* ESTILO CUADRADO PARA EL LOGO CON HOVER */
-    .header-logo-link {
-      display: inline-block;
-      text-decoration: none;
-      transition: transform 0.2s ease;
-    }
-    .header-logo-link:hover {
-      transform: scale(1.05);
-    }
+    /* ESTILO CUADRADO PARA EL LOGO */
     .header-logo-img {
       width: 50px;
       height: 50px;
@@ -50,7 +42,6 @@
       border-radius: 6px;
       background-color: #ffffff;
       padding: 4px;
-      display: block;
     }
     header h1 {
       font-size: 28px;
@@ -139,6 +130,8 @@
     .cta-btn:hover {
       background-color: #0056b3;
     }
+
+    /* BOTÓN FLOTANTE WHATSAPP */
     .whatsapp-float {
       position: fixed;
       bottom: 20px;
@@ -160,6 +153,44 @@
     .whatsapp-float:hover {
       transform: scale(1.05);
     }
+
+    /* BOTÓN FLOTANTE VOLVER ARRIBA CON LOGO */
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background-color: #1a252f;
+      color: white;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      z-index: 9999;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s, visibility 0.3s, transform 0.2s;
+    }
+    .back-to-top.show {
+      opacity: 1;
+      visibility: visible;
+    }
+    .back-to-top:hover {
+      transform: scale(1.1);
+      background-color: #007bff;
+    }
+    .back-to-top img {
+      width: 32px;
+      height: 32px;
+      object-fit: contain;
+      border-radius: 4px;
+      background: white;
+      padding: 2px;
+    }
+
     section {
       background: white;
       padding: 25px;
@@ -278,19 +309,18 @@
 </head>
 <body>
 
-  <!-- ENCABEZADO PRINCIPAL CON LOGO CONECTADO AL MENÚ -->
+  <!-- ENCABEZADO PRINCIPAL CON LOGO EN CUADRADO -->
   <header>
     <div class="header-logo-container">
-      <a href="#menu" class="header-logo-link" title="Ir al menú principal">
-        <img src="https://raw.githubusercontent.com/lusistem/Prisma-Stone/main/Prisma%20Stone.jpg" alt="Logo Prisma Stone" class="header-logo-img">
-      </a>
+      <img src="https://raw.githubusercontent.com/lusistem/Prisma-Stone/main/Prisma%20Stone.jpg" alt="Logo Prisma Stone" class="header-logo-img">
       <h1>PRISMA STONE</h1>
     </div>
     <p>D & E PRISMA STONE E.I.R.L. | Acabados Stone Magníficos | RUC: 20613717723</p>
   </header>
 
-  <!-- MENÚ DE NAVEGACIÓN -->
-  <nav id="menu">
+  <!-- MENÚ DE NAVEGACIÓN CON BOTÓN INICIO AL COSTADO DE NOSOTROS -->
+  <nav>
+    <a href="#">INICIO</a>
     <a href="#nosotros">NOSOTROS</a>
     <a href="#servicios">SERVICIOS</a>
     <a href="#trabajos">TRABAJOS</a>
@@ -312,10 +342,10 @@
         <img src="https://raw.githubusercontent.com/lusistem/Prisma-Stone/main/Banner03.jpg" alt="Banner 3">
       </div>
       <div class="carousel-slide">
-        <img src="https://raw.githubusercontent.com/lusistem/Prisma-Stone/main/Banner 04.jpg" alt="Banner 4">
+        <img src="https://raw.githubusercontent.com/lusistem/Prisma-Stone/main/Banner%2004.jpg" alt="Banner 4">
       </div>
     </div>
-
+    
     <!-- BOTÓN DE LLAMADA DIRECTA -->
     <div class="cta-btn-container">
       <a href="tel:+51970134165" class="cta-btn">📞 SOLICITAR COTIZACIÓN (+51 970 134 165)</a>
@@ -411,15 +441,21 @@
 
   </div>
 
+  <!-- BOTÓN FLOTANTE CON LOGO PARA VOLVER AL INICIO -->
+  <a href="#" class="back-to-top" id="backToTop" title="Volver al inicio">
+    <img src="https://raw.githubusercontent.com/lusistem/Prisma-Stone/main/Prisma%20Stone.jpg" alt="Inicio">
+  </a>
+
   <!-- BOTÓN FLOTANTE DE WHATSAPP -->
   <a href="https://wa.me/51970134165?text=Hola,%20deseo%20solicitar%20una%20cotización" target="_blank" class="whatsapp-float">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 26px; height: 26px;">
     Cotizar por WhatsApp
   </a>
 
-  <!-- SCRIPT PARA INTERACTIVIDAD Y AUTOMATIZACIÓN DEL CARRUSEL -->
+  <!-- SCRIPTS -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
+      // Automatización del carrusel
       const slides = document.querySelectorAll('.carousel-slide');
       let currentSlide = 0;
 
@@ -429,8 +465,17 @@
         slides[currentSlide].classList.add('active');
       }
 
-      // Cambiar de banner cada 2 segundos automáticamente
       setInterval(nextSlide, 2000);
+
+      // Mostrar/ocultar el botón flotante del logo al desplazar hacia abajo
+      const backToTopBtn = document.getElementById('backToTop');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+          backToTopBtn.classList.add('show');
+        } else {
+          backToTopBtn.classList.remove('show');
+        }
+      });
     });
   </script>
 </body>
