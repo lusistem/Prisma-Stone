@@ -34,6 +34,7 @@
       color: #333;
       background-color: #f4f6f8;
       padding-bottom: 60px;
+      overflow-x: hidden;
     }
     header {
       background-color: #1a252f;
@@ -91,20 +92,17 @@
     nav a:hover {
       background-color: #007bff;
     }
-    .container {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 20px 15px;
-    }
 
-    /* CARRUSEL OPTIMIZADO */
+    /* CARRUSEL OPTIMIZADO A ANCHO COMPLETO */
     .carousel-container {
       position: relative;
       width: 100%;
-      height: 380px;
-      margin-bottom: 20px;
+      height: 65vh;
+      max-height: 560px;
+      min-height: 260px;
+      margin-bottom: 10px;
       overflow: hidden;
-      border-radius: 8px;
+      border-radius: 0;
       box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     }
     .carousel-slide {
@@ -123,11 +121,19 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px 15px;
     }
 
     .cta-btn-container {
       text-align: center;
-      margin: 20px 0 30px 0;
+      margin: 10px 0 30px 0;
     }
     .cta-btn {
       background-color: #007bff;
@@ -314,9 +320,10 @@
       margin-bottom: 0;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
       .carousel-container {
-        height: 220px;
+        height: 42vh;
+        min-height: 230px;
       }
     }
   </style>
@@ -342,23 +349,23 @@
     <a href="#contactos">CONTACTOS</a>
   </nav>
 
-  <div class="container">
-
-    <!-- CARRUSEL DE PORTADAS -->
-    <div class="carousel-container">
-      <div class="carousel-slide active">
-        <img src="https://raw.githubusercontent.com/lusistem/Prisma-Stone/main/Banner1.png" alt="Banner 1">
-      </div>
-      <div class="carousel-slide">
-        <img src="https://raw.githubusercontent.com/lusistem/Prisma-Stone/main/Banner02.png" alt="Banner 2">
-      </div>
-      <div class="carousel-slide">
-        <img src="https://raw.githubusercontent.com/lusistem/Prisma-Stone/main/Banner03.jpg" alt="Banner 3">
-      </div>
-      <div class="carousel-slide">
-        <img src="https://raw.githubusercontent.com/lusistem/Prisma-Stone/main/Banner%2004.jpg" alt="Banner 4">
-      </div>
+  <!-- CARRUSEL DE PORTADAS (A ANCHO COMPLETO) -->
+  <div class="carousel-container">
+    <div class="carousel-slide active">
+      <img src="https://raw.githubusercontent.com/lusistem/Prisma-Stone/main/Banner1.png" alt="Banner 1">
     </div>
+    <div class="carousel-slide">
+      <img src="https://raw.githubusercontent.com/lusistem/Prisma-Stone/main/Banner02.png" alt="Banner 2">
+    </div>
+    <div class="carousel-slide">
+      <img src="https://raw.githubusercontent.com/lusistem/Prisma-Stone/main/Banner03.jpg" alt="Banner 3">
+    </div>
+    <div class="carousel-slide">
+      <img src="https://raw.githubusercontent.com/lusistem/Prisma-Stone/main/Banner%2004.jpg" alt="Banner 4">
+    </div>
+  </div>
+
+  <div class="container">
     
     <!-- BOTÓN DE LLAMADA DIRECTA -->
     <div class="cta-btn-container">
